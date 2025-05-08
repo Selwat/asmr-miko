@@ -37,17 +37,23 @@ export default function FortuneWheel() {
   }
 
   return (
-    <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-br 
+    <div
+      className="h-screen w-screen flex items-center justify-center bg-gradient-to-br 
     from-indigo-800 via-purple-800 to-pink-800 text-white p-4 sm:p-6 transition-colors 
-    duration-500 overflow-hidden">
-      <div className="h-screen w-screen max-w-5xl bg-white/10 backdrop-blur-lg p-6 sm:p-8 
-      rounded-2xl shadow-xl border border-white/20 animate-fade-in">
+    duration-500 overflow-hidden"
+    >
+      <div
+        className="h-screen w-screen max-w-5xl bg-white/10 backdrop-blur-lg p-6 sm:p-8 
+      rounded-2xl shadow-xl border border-white/20 animate-fade-in"
+      >
         <h1 className="text-3xl sm:text-4xl font-extrabold text-center mb-6">
-          🎯 Spin the Fortune Wheel
+          🎯 Spin the <span className="text-amber-400">Fortune</span> Wheel
         </h1>
 
-        <div className="flex flex-row space-x-10 space-y-6 lg:space-y-0 justify-center 
-        items-center lg:items-start">
+        <div
+          className="flex flex-row space-x-10 space-y-6 lg:space-y-0 justify-center 
+        items-center lg:items-start"
+        >
           <div className="w-full lg:w-1/2 flex flex-col space-y-4">
             <textarea
               value={textInput}
@@ -85,7 +91,6 @@ export default function FortuneWheel() {
               radiusLineWidth={2}
               fontSize={26}
             />
-
           </div>
         </div>
 
