@@ -133,6 +133,7 @@ export default function Home() {
             />
             <span className="text-xs w-8">{formatTime(track.duration)}</span>
           </div>
+          
           <div className="flex justify-center gap-6 mt-4">
             <button onClick={() => skipTrack("back")}>{<SkipBack />}</button>
             <button onClick={() => setIsPlaying(!isPlaying)}>
